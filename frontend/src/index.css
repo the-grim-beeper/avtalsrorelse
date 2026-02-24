@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@theme {
+  --color-swedish-blue: #006AA7;
+  --color-swedish-blue-light: #E8F0F8;
+  --color-swedish-gold: #FECC02;
+  --color-swedish-gold-light: #FFF9E0;
+  --color-settle-green: #16A34A;
+  --color-firm-red: #DC2626;
+  --color-flexible-yellow: #CA8A04;
+  --font-sans: "Inter", system-ui, sans-serif;
+}
