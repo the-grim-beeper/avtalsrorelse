@@ -26,14 +26,14 @@ export function SimulationPage({ agents, parameters, simulation, onBack }: Props
             onClick={onBack}
             className="text-sm text-gray-500 hover:text-gray-800 transition-colors cursor-pointer"
           >
-            \u2190 Tillbaka
+            &larr; Tillbaka
           </button>
-          <h1 className="text-lg font-bold text-gray-900">Avtalsr\u00f6relsen</h1>
+          <h1 className="text-lg font-bold text-gray-900">Avtalsrörelsen</h1>
         </div>
         {simulation.status === "running" && (
           <div className="flex items-center gap-2">
             <div className="w-2 h-2 bg-swedish-blue rounded-full animate-pulse" />
-            <span className="text-sm text-gray-500">Simulering p\u00e5g\u00e5r...</span>
+            <span className="text-sm text-gray-500">Simulering pågår...</span>
           </div>
         )}
       </header>

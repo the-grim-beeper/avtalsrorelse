@@ -8,7 +8,7 @@ const TYPE_COLORS: Record<string, string> = {
 };
 
 const TYPE_LABELS: Record<string, string> = {
-  union: "Fackf\u00f6rbund",
+  union: "Fackförbund",
   employer: "Arbetsgivare",
   confederation: "Centralorganisation",
   mediator: "Medlare",
@@ -30,7 +30,7 @@ export function AgentRoster({ agents }: Props) {
 
   return (
     <div className="space-y-4">
-      <h3 className="font-semibold text-gray-900">Akt\u00f6rer</h3>
+      <h3 className="font-semibold text-gray-900">Aktörer</h3>
       {tiers.map((tier) => {
         const tierAgents = agents.filter((a) => a.tier === tier);
         if (tierAgents.length === 0) return null;

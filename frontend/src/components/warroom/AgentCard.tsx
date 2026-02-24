@@ -75,8 +75,8 @@ export function AgentCard({ identity, state }: Props) {
             <p className="text-xs text-gray-700 italic leading-relaxed">"{lastAction.public_statement}"</p>
           </div>
           <div className="flex justify-between text-[10px] text-gray-500">
-            <span>F\u00f6rhandlingsvilja: {willingness}/100</span>
-            <span>Omg\u00e5ng {lastAction.round_number}</span>
+            <span>Förhandlingsvilja: {willingness}/100</span>
+            <span>Omgång {lastAction.round_number}</span>
           </div>
         </div>
       )}

@@ -1,12 +1,12 @@
 import type { ScenarioPreset } from "../../types";
 
 const PRESET_ICONS: Record<string, string> = {
-  stabil_tillvaxt: "\u2696\uFE0F",
-  inflationschock: "\uD83D\uDCC8",
-  "90talskrisen": "\uD83D\uDCC9",
-  hogkonjunktur: "\uD83D\uDE80",
-  gron_omstallning: "\uD83C\uDF3F",
-  pandemi_aterhamtning: "\uD83C\uDFE5",
+  stabil_tillvaxt: "⚖️",
+  inflationschock: "📈",
+  "90talskrisen": "📉",
+  hogkonjunktur: "🚀",
+  gron_omstallning: "🌿",
+  pandemi_aterhamtning: "🏥",
 };
 
 interface Props {
@@ -25,7 +25,7 @@ export function PresetCard({ preset, selected, onSelect }: Props) {
           : "border-gray-200 bg-white hover:border-gray-300 hover:shadow-sm"
         }`}
     >
-      <div className="text-2xl mb-2">{PRESET_ICONS[preset.id] || "\uD83D\uDCCA"}</div>
+      <div className="text-2xl mb-2">{PRESET_ICONS[preset.id] || "📊"}</div>
       <h3 className="font-semibold text-gray-900 mb-1">{preset.name}</h3>
       <p className="text-sm text-gray-600 leading-relaxed">{preset.description}</p>
     </button>

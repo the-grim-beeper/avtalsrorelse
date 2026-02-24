@@ -13,16 +13,16 @@ export function RoundHeader({ round, phase, phaseName, status }: Props) {
       <div className="flex items-center justify-between mb-2">
         <div>
           <h2 className="text-lg font-bold text-gray-900">
-            {status === "complete" ? "F\u00f6rhandling avslutad" : phaseName || "V\u00e4ntar..."}
+            {status === "complete" ? "Förhandling avslutad" : phaseName || "Väntar..."}
           </h2>
           {status === "running" && (
-            <p className="text-sm text-gray-500">Omg\u00e5ng {round}</p>
+            <p className="text-sm text-gray-500">Omgång {round}</p>
           )}
         </div>
         {status === "running" && (
           <div className="flex items-center gap-1.5">
             <div className="w-2 h-2 bg-swedish-blue rounded-full animate-pulse" />
-            <span className="text-xs text-gray-500">P\u00e5g\u00e5r</span>
+            <span className="text-xs text-gray-500">Pågår</span>
           </div>
         )}
       </div>

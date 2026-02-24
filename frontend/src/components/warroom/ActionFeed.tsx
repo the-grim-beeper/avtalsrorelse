@@ -51,7 +51,7 @@ export function ActionFeed({ actions, conflictEvents, agents }: Props) {
           >
             <div className="flex items-center justify-between mb-1">
               <span className="text-xs font-semibold text-gray-900">{agent.short_name}</span>
-              <span className="text-[10px] text-gray-400">Omg\u00e5ng {item.data.round_number}</span>
+              <span className="text-[10px] text-gray-400">Omgång {item.data.round_number}</span>
             </div>
             <p className="text-sm text-gray-700 italic">"{item.data.public_statement}"</p>
             <div className="flex items-center gap-3 mt-1.5">

@@ -18,7 +18,7 @@ export function AgentPanel({ agents, agentStates }: Props) {
 
   return (
     <div className="h-full overflow-y-auto space-y-4 pr-1">
-      <h2 className="text-sm font-semibold text-gray-500 uppercase tracking-wide">Akt\u00f6rer</h2>
+      <h2 className="text-sm font-semibold text-gray-500 uppercase tracking-wide">Aktörer</h2>
       {tiers.map((tier) => {
         const tierAgents = agents.filter((a) => a.tier === tier);
         if (tierAgents.length === 0) return null;

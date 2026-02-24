@@ -16,13 +16,13 @@ interface SliderConfig {
 
 const SLIDERS: SliderConfig[] = [
   { key: "inflation", label: "Inflation (KPI)", min: 0, max: 15, step: 0.1, unit: "%" },
-  { key: "unemployment", label: "Arbetsl\u00f6shet", min: 2, max: 15, step: 0.1, unit: "%" },
-  { key: "gdp_growth", label: "BNP-tillv\u00e4xt", min: -5, max: 8, step: 0.1, unit: "%" },
-  { key: "policy_rate", label: "Styrr\u00e4nta", min: -0.5, max: 10, step: 0.25, unit: "%" },
-  { key: "previous_agreement", label: "Tidigare m\u00e4rke", min: 0, max: 8, step: 0.1, unit: "%" },
+  { key: "unemployment", label: "Arbetslöshet", min: 2, max: 15, step: 0.1, unit: "%" },
+  { key: "gdp_growth", label: "BNP-tillväxt", min: -5, max: 8, step: 0.1, unit: "%" },
+  { key: "policy_rate", label: "Styrränta", min: -0.5, max: 10, step: 0.25, unit: "%" },
+  { key: "previous_agreement", label: "Tidigare märke", min: 0, max: 8, step: 0.1, unit: "%" },
 ];
 
-const POLITICAL_LABELS = ["", "V\u00e4nster", "Mittv\u00e4nster", "Mitten", "Mitterh\u00f6ger", "H\u00f6ger"];
+const POLITICAL_LABELS = ["", "Vänster", "Mittvänster", "Mitten", "Mitterhöger", "Höger"];
 
 export function ParameterSliders({ parameters, onChange }: Props) {
   const update = (key: string, value: number | string) => {
@@ -84,7 +84,7 @@ export function ParameterSliders({ parameters, onChange }: Props) {
                   : "bg-gray-100 text-gray-700 hover:bg-gray-200"
               }`}
             >
-              {level === "low" ? "L\u00e5gt" : level === "medium" ? "Medel" : "H\u00f6gt"}
+              {level === "low" ? "Lågt" : level === "medium" ? "Medel" : "Högt"}
             </button>
           ))}
         </div>

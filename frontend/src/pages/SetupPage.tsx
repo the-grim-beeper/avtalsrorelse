@@ -37,14 +37,14 @@ export function SetupPage({ onStart }: Props) {
     <div className="min-h-screen bg-gray-50">
       <header className="bg-white border-b border-gray-200">
         <div className="max-w-6xl mx-auto px-6 py-8">
-          <h1 className="text-3xl font-bold text-gray-900 tracking-tight">Avtalsr\u00f6relsen</h1>
-          <p className="text-gray-600 mt-1">Simulering av svensk l\u00f6nebildning</p>
+          <h1 className="text-3xl font-bold text-gray-900 tracking-tight">Avtalsrörelsen</h1>
+          <p className="text-gray-600 mt-1">Simulering av svensk lönebildning</p>
         </div>
       </header>
 
       <main className="max-w-6xl mx-auto px-6 py-8 space-y-8">
         <section>
-          <h2 className="text-lg font-semibold text-gray-900 mb-4">V\u00e4lj scenario</h2>
+          <h2 className="text-lg font-semibold text-gray-900 mb-4">Välj scenario</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {presets.map((preset) => (
               <PresetCard
@@ -74,7 +74,7 @@ export function SetupPage({ onStart }: Props) {
                      hover:bg-swedish-blue/90 transition-colors shadow-sm hover:shadow-md
                      active:scale-[0.98] cursor-pointer"
           >
-            Starta f\u00f6rhandling
+            Starta förhandling
           </button>
         </div>
       </main>

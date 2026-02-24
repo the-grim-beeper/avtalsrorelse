@@ -8,8 +8,8 @@ interface NegotiationPairDef {
 
 const PAIRS: NegotiationPairDef[] = [
   { label: "Industriavtalet", union_ids: ["if_metall", "unionen"], employer_id: "teknikforetagen" },
-  { label: "Handels \u2013 Sv Handel", union_ids: ["handels"], employer_id: "svensk_handel" },
-  { label: "Unionen \u2013 Almega", union_ids: ["unionen"], employer_id: "almega" },
+  { label: "Handels – Sv Handel", union_ids: ["handels"], employer_id: "svensk_handel" },
+  { label: "Unionen – Almega", union_ids: ["unionen"], employer_id: "almega" },
   { label: "Offentlig sektor", union_ids: ["kommunal", "vision", "vardforbundet"], employer_id: "skr" },
 ];
 
