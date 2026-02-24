@@ -7,6 +7,7 @@ app = FastAPI(title="Avtalsrörelsen Simulator")
 
 app.add_middleware(
     CORSMiddleware,
+    allow_origin_regex=r"https://.*\.up\.railway\.app",
     allow_origins=settings.cors_origins,
     allow_credentials=True,
     allow_methods=["*"],
