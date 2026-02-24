@@ -1,6 +1,6 @@
 import type { AgentIdentity, MacroParameters, ScenarioPreset } from "../types";
 
-const BASE = import.meta.env.VITE_API_URL || "/api";
+const BASE = "/api";
 
 export async function fetchPresets(): Promise<ScenarioPreset[]> {
   const res = await fetch(`${BASE}/presets`);
